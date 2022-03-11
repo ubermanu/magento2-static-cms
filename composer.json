@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "magento/module-cms": ">=100 <102",
+        "magento/module-cms": ">=100 <=104",
         "mnapoli/front-yaml": "^1.8"
     },
     "autoload": {
