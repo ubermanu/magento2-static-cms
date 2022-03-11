@@ -25,12 +25,10 @@ identifier: home
 ```
 ---
 is_active: 1
-title: Home page
-content_heading: Home Page
-identifier: home
-page_layout: 1column
+title: My Block
+identifier: block-1
 ---
-<p>CMS homepage content goes here.</p>
+<p>This is the content of a block.</p>
 ```
 
 ## Usage
