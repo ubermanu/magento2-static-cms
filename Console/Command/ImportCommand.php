@@ -109,6 +109,11 @@ class ImportCommand extends Command
 
         $defaultIdentifier = $this->extractIdentifier($filename);
 
+        if (!$defaultIdentifier) {
+            $output->writeln('<error>Could not extract identifier from filename "' . basename($filename) . '"</error>');
+            return 1;
+        }
+
         if ($input->getOption('type') === 'block') {
 
             /** @var Block $block */
