@@ -1,0 +1,26 @@
+{
+    "name": "ubermanu/magento2-static-cms",
+    "description": "Tool for creating static pages and blocks for Magento 2",
+    "type": "magento2-module",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Emmanuel Vodor",
+            "email": "manu@paca.happy-dev.fr"
+        }
+    ],
+    "require": {
+        "magento/module-cms": ">=100 <102",
+        "mnapoli/front-yaml": "^1.8"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Ubermanu\\StaticCms\\": ""
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
