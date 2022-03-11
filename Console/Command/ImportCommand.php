@@ -107,7 +107,7 @@ class ImportCommand extends Command
             return 1;
         }
 
-        $defaultIdentifier = $this->getIdentifier($filename);
+        $defaultIdentifier = $this->extractIdentifier($filename);
 
         if ($input->getOption('type') === 'block') {
 
@@ -178,7 +178,7 @@ class ImportCommand extends Command
      * @param string $filename
      * @return string
      */
-    protected function getIdentifier(string $filename): string
+    protected function extractIdentifier(string $filename): string
     {
         return explode('.', basename($filename))[0];
     }
