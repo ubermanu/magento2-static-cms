@@ -33,7 +33,7 @@ class PageParser extends AbstractParser
     public function parse(string $content): Page
     {
         $front = $this->frontYAMLParser->parse($content, false);
-        $additionalData = $front->getYAML();
+        $additionalData = $front->getYAML() ?? [];
 
         $page = $this->pageFactory->create();
         $page->addData($additionalData);

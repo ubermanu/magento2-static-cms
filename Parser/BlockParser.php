@@ -33,7 +33,7 @@ class BlockParser extends AbstractParser
     public function parse(string $content): Block
     {
         $front = $this->frontYAMLParser->parse($content, false);
-        $additionalData = $front->getYAML();
+        $additionalData = $front->getYAML() ?? [];
 
         $block = $this->blockFactory->create();
         $block->addData($additionalData);
